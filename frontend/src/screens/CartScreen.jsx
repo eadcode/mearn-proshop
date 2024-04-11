@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap';
 import { FaTrash } from 'react-icons/fa';
 import Message from '../components/Message.jsx';
-import { addToCart, removeFromCart } from '../slices/CartSlice.js';
+import { addToCart, removeFromCart } from '../slices/cartSlice.js';
 
 const CartScreen = () => {
     const navigate = useNavigate();

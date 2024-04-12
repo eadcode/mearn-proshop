@@ -8,6 +8,7 @@ import { notFound, errorHandler } from './routes/errorMiddleware.js';
 
 import userRoutes from './routes/userRoutes.js';
 import productRoutes from './routes/productRoutes.js';
+import orderRoutes from './routes/orderRoutes.js';
 
 dotenv.config();
 
@@ -30,6 +31,7 @@ app.use(cookieParser());
 
 app.use('/api/users', userRoutes);
 app.use('/api/products', productRoutes);
+app.use('/api/orders', orderRoutes);
 
 app.use(notFound);
 app.use(errorHandler);

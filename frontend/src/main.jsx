@@ -10,6 +10,7 @@ import HomeScreen from './screens/HomeScreen.jsx';
 import ProductScreen from './screens/ProductScreen.jsx';
 import CartScreen from './screens/CartScreen.jsx';
 import LoginScreen from './screens/LoginScreen.jsx';
+import RegisterScreen from './screens/RegisterScreen.jsx';
 
 import './assets/styles/bootstrap.custom.css';
 import './assets/styles/index.css';
@@ -21,6 +22,7 @@ const router = createBrowserRouter(
             <Route path="/product/:id" element={ <ProductScreen /> } />
             <Route path="/cart" element={ <CartScreen /> } />
             <Route path="/login" element={ <LoginScreen /> } />
+            <Route path="/register" element={ <RegisterScreen /> } />
         </Route>,
     ),
 );
